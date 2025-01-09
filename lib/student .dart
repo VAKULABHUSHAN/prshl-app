@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:preschool/student%20profile.dart';
 
 class std extends StatefulWidget {
   const std({super.key});
@@ -30,130 +31,159 @@ class _stdState extends State<std> {
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: const Center(
-                    child: Text("STUDENT DETAILS",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Colors.white),)
+                    child: Text("STUDENT IN CLASS ",style: TextStyle(fontSize: 35,fontWeight: FontWeight.bold,color: Colors.white),)
                 ),
               ),
             ),
             const SizedBox(height: 25,),
-
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 1 ',style: TextStyle(fontSize: 25),),
-
-                  ],
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 1 ',style: TextStyle(fontSize: 25),),
+              
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
             const SizedBox(height: 10,),
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 2 ',style: TextStyle(fontSize: 25),),
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 2',style: TextStyle(fontSize: 25),),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
             const SizedBox(height: 10,),
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 3 ',style: TextStyle(fontSize: 25),),
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 3 ',style: TextStyle(fontSize: 25),),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
             const SizedBox(height: 10,),
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 4 ',style: TextStyle(fontSize: 25),),
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 4',style: TextStyle(fontSize: 25),),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
             const SizedBox(height: 10,),
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 5 ',style: TextStyle(fontSize: 25),),
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 5 ',style: TextStyle(fontSize: 25),),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
             const SizedBox(height: 10,),
-            Container(
-              height: MediaQuery.of(context).size.height/16,
-              margin: const EdgeInsets.symmetric(horizontal: 10.0),
-              decoration: BoxDecoration(
-                border: Border.all(color: Colors.blue),
-                color: Colors.blue.shade200,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: const ListTile(
-                title: Row(
-                  children: [
-                    Icon(Icons.person),
-                    SizedBox(width: 20,),
-                    Text('Student 6 ',style: TextStyle(fontSize: 25),),
+            GestureDetector(
+              child: Container(
+                height: MediaQuery.of(context).size.height/16,
+                margin: const EdgeInsets.symmetric(horizontal: 10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.blue),
+                  color: Colors.blue.shade200,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: const ListTile(
+                  title: Row(
+                    children: [
+                      Icon(Icons.person),
+                      SizedBox(width: 20,),
+                      Text('Student 6 ',style: TextStyle(fontSize: 25),),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>stdpro()));
+              },
             ),
           ],
         ),
